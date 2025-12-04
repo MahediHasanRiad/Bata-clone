@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 function Card({ image, name, price }) {
   return (
-    <Link to={"/"}>
+    <Link to={"/men/singleProduct"}>
       <section className="rounded p-4  bg-white shadow-md m-2">
         {/* image section  */}
         <div>

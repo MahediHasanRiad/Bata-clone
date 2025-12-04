@@ -1,4 +1,5 @@
 import { Trash } from "lucide-react";
+import ProductCounter from "../../utils/Product-Counter";
 
 function CardItem({ image, name, brandName, discountedPrice, regularPrice }) {
   return (
@@ -33,17 +34,7 @@ function CardItem({ image, name, brandName, discountedPrice, regularPrice }) {
 
       {/* 3. Quantity Counter */}
       <div className="flex items-center justify-center space-x-0 basis-3/12 mx-4">
-        <button className="px-3 py-1 bg-gray-100 border border-r-0 rounded-l-md text-gray-600 hover:bg-gray-200 transition focus:outline-none cursor-pointer">
-          -
-        </button>
-
-        <span className="px-4 py-1 border-t border-b text-sm font-medium text-gray-800">
-          1
-        </span>
-
-        <button className="px-3 py-1 bg-gray-100 border border-l-0 rounded-r-md text-gray-600 hover:bg-gray-200 transition focus:outline-none cursor-pointer">
-          +
-        </button>
+        <ProductCounter value={'1'} />
       </div>
 
       <div className="basis-1/12 flex justify-end">

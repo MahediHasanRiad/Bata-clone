@@ -3,6 +3,7 @@ import FilterArea from "../component/products/filter";
 
 // image
 import image1 from "../Image/man/03_300x.avif";
+import PaginationControlled from "../utils/Pagination";
 import SelectItem from "../utils/select-item";
 
 function Products() {
@@ -31,6 +32,12 @@ function Products() {
           <Card image={image1} name={"Men Show"} price={"2000"} />
           <Card image={image1} name={"Men Show"} price={"2000"} />
         </section>
+
+        {/* ----- pagination -------  */}
+        <PaginationControlled />
+      </section>
+
+      <section>
       </section>
     </section>
   );

@@ -9,6 +9,7 @@ import WishList from "./pages/wish-List";
 import AddToCard from "./pages/Add-to-card";
 import Profile from "./pages/user/profile";
 import UserAddress from "./pages/user/Dashboard/User-Address";
+import ProductDetails from "./pages/product-details";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
         <Route path="/" element={<Home />} />
         <Route path="/men" element={<Products />} />
+        <Route path="/men/singleProduct" element={<ProductDetails />} />
         <Route path="/wishlist" element={<WishList />} />
         <Route path="/addtocard" element={<AddToCard />} />
       </Routes>

@@ -2,11 +2,10 @@ import React from "react";
 
 function Button({ text, type = "button" }) {
   return (
-
     <button
       type={type} // Good practice for accessibility and form submission
       className="
-        bg-red-600                
+        bg-red-600           
         text-white                  
         font-semibold              
         py-3 px-6                   
